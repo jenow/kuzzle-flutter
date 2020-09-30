@@ -1,0 +1,18 @@
+{
+  "name": "kuzzle-flutter",
+  "version": "1.0.0",
+  "description": "Example of a flutter app using Kuzzle backend",
+  "main": "index.js",
+  "dependencies": {
+    "kuzzle": "2.4.4"
+  },
+  "devDependencies": {
+    "xml2json": "^0.12.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jenova.ke20@gmail.com",
+  "repository": "https://github.com/jenow/kuzzle-flutter",
+  "license": "Apache-2.0"
+}
