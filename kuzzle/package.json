@@ -4,7 +4,7 @@
   "description": "Example of a flutter app using Kuzzle backend",
   "main": "index.js",
   "dependencies": {
-    "kuzzle": "2.4.4"
+    "kuzzle": "2.6.0"
   },
   "devDependencies": {
     "xml2json": "^0.12.0"

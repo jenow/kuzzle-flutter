@@ -39,8 +39,8 @@ class _MyHomePageState extends State<MyHomePage> {
     kuzzle = Kuzzle(
       WebSocketProtocol(
         Uri(
-          scheme: 'wss',
-          host: 'kuzzle.folksinc.com',
+          scheme: 'ws',
+          host: 'my-kuzzle-host',
           port: 7512,
         ),
       ),
@@ -63,7 +63,12 @@ class _MyHomePageState extends State<MyHomePage> {
         stations.clear();
         for (dynamic station in message.result['_source']['vcs']['sl']['si']) {
           setState(() {
-            BikeStation bs = BikeStation(lat: station['la'], lng: station['lg'], total: station['to'], free: station['fr']);
+            BikeStation bs = BikeStation(
+              lat: station['la'],
+              lng: station['lg'],
+              total: station['to'],
+              free: station['fr'],
+            );
             stations.add(bs);
           });
         }

@@ -1,4 +1,4 @@
-const { Backend } = require('../../kuzzle')
+const { Backend } = require('kuzzle')
 const https = require('https')
 const parser = require('xml2json')
 

@@ -5,7 +5,7 @@ import 'package:latlong/latlong.dart';
 import 'package:mobile/bike_station.dart';
 
 class Map extends StatefulWidget {
-  List<BikeStation> stations;
+  final List<BikeStation> stations;
 
   Map(this.stations);
 
